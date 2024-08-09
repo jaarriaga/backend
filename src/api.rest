@@ -1,0 +1,47 @@
+###
+GET http://localhost:3000/mascotas/hello
+
+### consultar todas las mascotas
+GET http://localhost:3000/mascotas
+
+### consultar una mascota por su id
+GET http://localhost:3000/mascotas/2
+
+### Insertar una mascota nueva
+POST http://localhost:3000/mascotas
+Content-Type: application/json
+
+{
+    "tipo": "Perro",
+    "raza": "Chau-chau",
+    "alimentacion": "croquetas",
+    "vacunas": "El parvovirus canino, moquillo, hepatitis canina y la rabia",
+    "edad": 1,
+    "precio": 12000
+    
+}
+
+### Eliminar una mascota por su id
+DELETE http://localhost:3000/mascotas/1
+
+### Modificar datos de una mascota por su id
+PUT http://localhost:3000/mascotas/2
+Content-Type: application/json
+
+{
+    "precio": 25000
+}
+
+
+### Envía un saludo
+GET http://localhost:3000/empleados/saludo
+
+### Consultar un empleados por su id
+GET http://localhost:3000/empleados/1
+
+###
+GET http://localhost:3000/localhost:3000/empleados/saludo
+
+
+### consultar todas las compras
+GET http://localhost:3000/compra
